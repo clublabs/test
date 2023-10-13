@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API gateway for claims view app",
+    "description": "API gateway for claims view app - we are testing for Confeluence",
     "version": "2021-08-18T22:30:34Z",
-    "title": "Claims View Api"
+    "title": "Claims View Api - we are testing for Confeluence"
   },
   "schemes": ["https"],
   "x-amazon-apigateway-request-validators": {
