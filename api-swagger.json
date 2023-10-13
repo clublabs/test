@@ -1,0 +1,601 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API gateway for claims view app",
+    "version": "2021-08-18T22:30:34Z",
+    "title": "Claims View Api"
+  },
+  "schemes": ["https"],
+  "x-amazon-apigateway-request-validators": {
+    "all": {
+      "validateRequestBody": true,
+      "validateRequestParameters": true
+    },
+    "params-only": {
+      "validateRequestBody": false,
+      "validateRequestParameters": true
+    }
+  },
+  "paths": {
+    "/auto/create-amendment-order": {
+      "post": {
+        "x-amazon-apigateway-request-validator": "all",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "createAmendmentOrderRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createAmendmentOrderRequest"
+            }
+          }
+        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "security": [
+          {
+            "jwt-authorizer": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      },
+      "options": {
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      }
+    },
+    "/auto/calculate-premium": {
+      "post": {
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "security": [
+          {
+            "jwt-authorizer": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      },
+      "options": {
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      }
+    },
+    "/auto/cancel-amendment-order": {
+      "post": {
+        "x-amazon-apigateway-request-validator": "all",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "cancelAmendmentOrderRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/cancelAmendmentOrderRequest"
+            }
+          }
+        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "security": [
+          {
+            "jwt-authorizer": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      },
+      "options": {
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      }
+    },
+    "/auto/amendment-order-endorsement": {
+      "post": {
+        "x-amazon-apigateway-request-validator": "all",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "retrieveEndorsementPdfRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/retrieveEndorsementPdfRequest"
+            }
+          }
+        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "security": [
+          {
+            "jwt-authorizer": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      },
+      "options": {
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      }
+    },
+    "/auto/complete-amendment-order": {
+      "post": {
+        "x-amazon-apigateway-request-validator": "all",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "completeAmendmentOrderRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/completeAmendmentOrderRequest"
+            }
+          }
+        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "security": [
+          {
+            "jwt-authorizer": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      },
+      "options": {
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "httpMethod": "POST",
+          "uri": "WILL_BE_INJECTED",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "contentHandling": "CONVERT_TO_TEXT",
+          "type": "aws_proxy"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "jwt-authorizer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "x-amazon-apigateway-authtype": "custom",
+      "x-amazon-apigateway-authorizer": {
+        "authorizerUri": "WILL_INJECT",
+        "authorizerResultTtlInSeconds": 0,
+        "type": "token"
+      }
+    }
+  },
+  "definitions": {
+    "Empty": {
+      "type": "object",
+      "title": "Empty Schema"
+    },
+    "createAmendmentOrderRequest": {
+      "type": "object",
+      "properties": {
+        "flowType": {
+          "type": "string"
+        },
+        "policyNumber": {
+          "type": "string"
+        },
+        "clubCode": {
+          "type": "string"
+        },
+        "aoEffectiveDate": {
+          "type": "string"
+        },
+        "huonElements": {
+          "type": "object",
+          "properties": {
+            "clientNumber": {
+              "type": "string"
+            }
+          },
+          "required": ["clientNumber"]
+        }
+      },
+      "required": [
+        "policyNumber",
+        "clubCode",
+        "aoEffectiveDate",
+        "huonElements"
+      ]
+    },
+    "cancelAmendmentOrderRequest": {
+      "type": "object",
+      "properties": {
+        "flowType": {
+          "type": "string"
+        },
+        "policyNumber": {
+          "type": "string"
+        },
+        "clubCode": {
+          "type": "string"
+        },
+        "cancelAOIndicator": {
+          "type": "string"
+        },
+        "huonElements": {
+          "type": "object",
+          "properties": {
+            "clientNumber": {
+              "type": "string"
+            }
+          },
+          "required": ["clientNumber"]
+        }
+      },
+      "required": [
+        "policyNumber",
+        "clubCode",
+        "cancelAOIndicator",
+        "huonElements"
+      ]
+    },
+    "retrieveEndorsementPdfRequest": {
+      "type": "object",
+      "properties": {
+        "policyNumber": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "signed": {
+          "type": "boolean"
+        },
+        "endorsementNumber": {
+          "type": "string"
+        },
+        "endorsementName": {
+          "type": "string"
+        },
+        "insuredAddress": {
+          "type": "object",
+          "properties": {
+            "Line1": {
+              "type": "string"
+            },
+            "Line2": {
+              "type": "string"
+            },
+            "City": {
+              "type": "string"
+            },
+            "State": {
+              "type": "string"
+            },
+            "ZipCode": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": ["policyNumber", "signed", "endorsementNumber"]
+    },
+    "completeAmendmentOrderRequest": {
+      "type": "object",
+      "properties": {
+        "flowType": {
+          "type": "string"
+        },
+        "policyNumber": {
+          "type": "string"
+        },
+        "aoEffectiveDate": {
+          "type": "string"
+        },
+        "clubCode": {
+          "type": "string"
+        },
+        "notesTitle": {
+          "type": "string"
+        },
+        "notesText": {
+          "type": "string"
+        },
+        "emailAddress": {
+          "type": "string"
+        },
+        "insuredFirstName": {
+          "type": "string"
+        },
+        "insuredLastName": {
+          "type": "string"
+        },
+        "huonElements": {
+          "type": "object",
+          "properties": {
+            "clientNumber": {
+              "type": "string"
+            }
+          },
+          "required": ["clientNumber"]
+        },
+        "vehiclesWithCoverages": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "vehicleId": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string"
+                },
+                "make": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "trim": {
+                  "type": "string"
+                },
+                "vehicleCoverages": {
+                  "type": "object",
+                  "properties": {
+                    "coverageTypeCode": {
+                      "type": "string"
+                    },
+                    "coverageValueCode": {
+                      "type": "string"
+                    },
+                    "previousCoverageValueCode": {
+                      "type": "string"
+                    },
+                    "coveragePremium": {
+                      "type": "string"
+                    },
+                    "currentTermCoveragePremium": {
+                      "type": "string"
+                    },
+                    "proratedPremium": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "coverageTypeCode",
+                    "coverageValueCode",
+                    "previousCoverageValueCode",
+                    "coveragePremium",
+                    "currentTermCoveragePremium",
+                    "proratedPremium"
+                  ]
+                }
+              },
+              "required": [
+                "vehicleId",
+                "year",
+                "make",
+                "model",
+                "trim",
+                "vehicleCoverages"
+              ]
+            }
+          ]
+        },
+        "transactionNotes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "flowType",
+        "policyNumber",
+        "aoEffectiveDate",
+        "clubCode",
+        "notesTitle",
+        "notesText",
+        "emailAddress",
+        "insuredFirstName",
+        "insuredLastName",
+        "huonElements",
+        "vehiclesWithCoverages"
+      ]
+    }
+  },
+  "x-amazon-apigateway-gateway-responses": {
+    "DEFAULT_4XX": {
+      "responseParameters": {
+        "gatewayresponse.header.Access-Control-Allow-Origin": "'*'"
+      },
+      "responseTemplates": {
+        "application/json": "{\"message\":$context.error.messageString}"
+      }
+    },
+    "DEFAULT_5XX": {
+      "responseParameters": {
+        "gatewayresponse.header.Access-Control-Allow-Origin": "'*'"
+      },
+      "responseTemplates": {
+        "application/json": "{\"message\":$context.error.messageString}"
+      }
+    }
+  }
+}
